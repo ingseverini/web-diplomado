@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background: linear-gradient(to top, #ff7f50, #1e90ff);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+}
+
+.logo{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: default;
+    height: 40px;  
+    margin-right: 0px;
+}
+
+.nav-titulo{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 1.3rem;
+    transform: uppercase;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: #f94a23;
+    transform: scale(1.2);
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+
+/* Contenido hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 62%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+   
+}
+
+.titulo-principal{
+    font-weight: 700;
+    width: 80%;
+    padding-bottom: 0.6rem;
+    margin: 0 auto;
+}
+
+.lead {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .lead {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+.lead {
+    font-size: 0.85rem;
+}
+
+}
+
+.boton-boton{
+    margin-top: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.boton-boton:hover{
+    background-color: #e23a14;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.06);
+}
+
+.boton-boton:active{
+    background-color: #f33c27;
+    transform: scale(1);
+}
+
+
+
+/*Destacados y Categorias*/
+.about {
+    background-color: #f5f5f5;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin-top: -19rem;
+}
+
+.container.about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sobre-paragrafo {
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-titulo {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.img-icon {
+    height: 4rem;
+    width: 4rem;
+    background-color: #f94a23;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sobre-icon {
+    width: 2rem;
+    height: 2rem;
+   margin-top: 1em;
+}
+
+
+
+/*Estilo sección testimonios*/
+.seccion-testimonio {
+    padding: 25px 0;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #fad5b9, #b0caf7);
+    text-align: center;
+}
+
+#carousel-testimonio {
+    background-color: #f94a23;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    direction: rtl;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.contenido-testimonio h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.contenido-testimonio p {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    font-style: italic;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+
+/*Pie de Pagina*/
+.pie{
+    padding-top: 2rem;
+    margin-top: 1.4rem;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: block;
+    margin: 5px 0;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #5067ff;
+}
+
+
+
+/*hero-galería*/
+
+.hero-galeria {
+    background: url('../img/herogaleriaa.jpg') center/cover no-repeat;
+    position: relative;
+    padding: 100px 0;
+}
+
+.hero-galeria::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.container-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.container-galeria p {
+    font-size: 1.4rem;
+}
+.container-galeria h1 {
+    margin-bottom: 1rem;
+    font-size: 2.9rem;
+}
+
+.container-galeria h2 {
+    font-size: 4rem;
+}
+
+
+
+/*seccion galeria*/
+.galeria-mascotas{
+    background: linear-gradient(135deg, #f8f6ef, #f8f0ec);
+    padding: 50px 0;
+    margin-top: 19px;
+}
+
+.seccion-galeria{
+    font-weight: 700;
+}
+
+.galeria-lead{
+    font-size: 1.5rem;
+}
+
+
+
+
+/*hero detalles*/
+
+.hero-detalles{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.lead-detalles{
+    margin-bottom: 2rem;
+}
+
+.search-bar{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn-explorar{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: blue;
+}
+
+#modalImage {
+    max-width: 80%;
+    max-height: 65vh;
+    object-fit: contain;
+}
+
+
+
+
+
+/*Sobre el Autor*/
+
+.sobre-autor {
+    background-image: url('../img/fondoherosobre.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: white;
+}
+
+.sobre-autor h2{
+    font-size: 3.5rem;
+}
+
+.subtitulo-autor{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.parrafo-autor{
+    font-size: 2rem;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px blue (255, 204, 0, 0.8);
+}
+
+.bonton-btn{
+    padding: 10px 18px;
+    border-radius: 40%;
+}
+
+.bonton-btn:hover{
+    background-color: #e23a14;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.06);
+}
